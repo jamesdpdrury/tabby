@@ -1,0 +1,141 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+    width: 100%;
+}
+
+.level1::after {
+    content: "";
+    height: 4px;
+    width: 200px;
+    bottom: 0;
+    left: 50%;
+    background-color: red;
+    position: absolute;
+    transform: translateX(-50%);
+}
+.level2::after {
+    content: "";
+    height: 4px;
+    width: 200px;
+    bottom: 0;
+    left: 50%;
+    background-color: yellow;
+    position: absolute;
+    transform: translateX(-50%);
+}
+.level3::after {
+    content: "";
+    height: 4px;
+    width: 200px;
+    bottom: 0;
+    left: 50%;
+    background-color: greenyellow;
+    position: absolute;
+    transform: translateX(-50%);
+}
+.mirror {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom right, #2c2c2c, #1a1a1a);
+    overflow: hidden;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+
+.floating-text {
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 200!important;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    animation: float 5s infinite ease-in-out alternate;
+    animation-delay: var(--delay);
+}
+
+.floating-text:nth-last-child() h3 {
+    margin-bottom: 30px;
+}
+.floating-text h3 {
+    font-weight: 400!important;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 0 0 0 0;
+    line-height: 1;
+}
+.floating-text h3 span {
+    font-weight: 200!important;
+    font-size: 20px;
+}
+.floating-text {
+    margin-bottom: 30px;
+}
+
+#title h2 {
+    font-weight: 200!important;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin: 30px 0 0 0;
+}
+
+@keyframes float {
+    from {
+        transform: translate(-10px, -10px);
+    }
+    to {
+        transform: translate(10px, 10px);
+    }
+}
+
+.atmosphere {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('smoke.png') repeat;
+    opacity: .5;
+    animation: moveSmoke 30s linear infinite alternate;
+}
+
+@keyframes moveSmoke {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 1000px 1000px;
+    }
+}
+
+.atmosphere2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('smoke2.png') repeat;
+    opacity: .5;
+    animation: moveSmoke2 30s linear infinite alternate;
+}
+
+@keyframes moveSmoke2 {
+    0% {
+        background-position: 2000px 1000px;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
