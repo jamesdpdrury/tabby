@@ -51,4 +51,4 @@ if (typeof data === 'object' && data !== null) {
 }
 
 // Set an interval to reload the iframe every 60000 milliseconds (60 seconds)
-setInterval(reloadIframe, 10000); // 60000 milliseconds = 60 seconds
+setInterval(reloadIframe, 5000); // 60000 milliseconds = 60 seconds
