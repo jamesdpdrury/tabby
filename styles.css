@@ -69,7 +69,7 @@ body, html {
 
 
 .floating-text {
-    width: 100%;
+    width: 90%;
     text-align: center;
     font-size: 60px;
     font-weight: 200!important;
@@ -78,6 +78,9 @@ body, html {
     animation: float 5s infinite ease-in-out alternate;
     animation-delay: var(--delay);
     font-family: "Indie Flower", cursive;
+    margin-bottom: 35px; 
+    padding-left: 5%;
+    line-height: 1;
 }
 
 .floating-text:nth-last-child() h3 {
@@ -85,7 +88,7 @@ body, html {
 }
 .floating-text h3 {
     font-weight: 400!important;
-    font-size: 85px;
+    font-size: 75px;
     margin: 0 0 0 0;
     line-height: 1;
     font-family: "Covered By Your Grace", cursive;
@@ -93,18 +96,19 @@ body, html {
 .floating-text h3 span {
     font-weight: 200!important;
     font-family: "Indie Flower", cursive;
-    font-size:55px;
+    font-size:40px;
     margin-top: -30px;
 }
-.floating-text {
-    margin-bottom: 55px;
+.floating-text span {
+    font-size: 45px;
 }
+
 
 #title h2 {
     font-weight: 400!important;
     text-transform: uppercase;
-    font-size: 100px;
-    margin: 100px 0 0 0;
+    font-size: 90px;
+    margin: 47px 0 0 0;
     font-family: "Covered By Your Grace", cursive;
 }
 
